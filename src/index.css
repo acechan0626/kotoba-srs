@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Noto Sans TC', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f8f5f0;
+    color: #1c1917;
+  }
+
+  .dark body {
+    background-color: #141210;
+    color: #f5f2eb;
+  }
+}
+
+.font-jp-serif {
+  font-family: 'Noto Serif JP', 'Noto Serif TC', Georgia, serif;
+}
+
+.font-jp-sans {
+  font-family: 'Noto Sans JP', 'Noto Sans TC', sans-serif;
+}
